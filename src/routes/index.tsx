@@ -155,14 +155,35 @@ function Index() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:py-32 grid lg:grid-cols-2 gap-14 items-center">
           <div className="space-y-6">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
-              Sobre o atendimento
+              Sobre Pedro Ward
             </p>
             <h2 className="font-display text-4xl md:text-5xl leading-tight text-balance">
               Atendimento focado em <span className="text-primary">resultado real</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-lg">
-              O trabalho é direcionado para aliviar dores, recuperar movimentos e melhorar a funcionalidade do corpo. Cada paciente é avaliado de forma individual.
+              Pedro Ward atua com foco em dor e funcionalidade, ajudando pacientes a:
             </p>
+
+            <ul className="space-y-3">
+              {[
+                "Reduzir dores persistentes",
+                "Recuperar movimentos",
+                "Melhorar a qualidade de vida",
+                "Evitar recorrência de lesões",
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-3 text-foreground">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-soft text-primary">
+                    <HeartPulse className="h-4 w-4" />
+                  </span>
+                  <span className="text-base">{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <p className="text-lg text-muted-foreground max-w-lg">
+              Com uma abordagem individualizada, cada atendimento é pensado para o <span className="text-foreground font-medium">seu corpo</span> — não para um protocolo genérico.
+            </p>
+
             <CtaButton>Agendar avaliação</CtaButton>
           </div>
 
