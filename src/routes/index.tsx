@@ -12,7 +12,7 @@ import painImg from "@/assets/pain-problem.jpg";
 import osteoImg from "@/assets/osteopathy.jpg";
 import physioImg from "@/assets/physiotherapy.jpg";
 import elderlyImg from "@/assets/elderly-active.jpg";
-import careImg from "@/assets/humanized-care.jpg";
+import careImg from "@/assets/pedro-ward.jpg";
 import ctaImg from "@/assets/cta-final.jpg";
 
 export const Route = createFileRoute("/")({
@@ -189,8 +189,8 @@ function Index() {
 
           <img
             src={careImg}
-            alt="Atendimento próximo e humanizado"
-            width={1200}
+            alt="Pedro Ward — Fisioterapeuta e Osteopata em Bauru"
+            width={900}
             height={1200}
             loading="lazy"
             className="w-full h-auto rounded-[2rem] object-cover shadow-card"
