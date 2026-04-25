@@ -12,7 +12,7 @@ import painImg from "@/assets/pain-problem.jpg";
 import osteoImg from "@/assets/osteopathy.jpg";
 import physioImg from "@/assets/physiotherapy.jpg";
 import elderlyImg from "@/assets/elderly-active.jpg";
-import careImg from "@/assets/humanized-care.jpg";
+import careImg from "@/assets/pedro-ward.jpg";
 import ctaImg from "@/assets/cta-final.jpg";
 
 export const Route = createFileRoute("/")({
