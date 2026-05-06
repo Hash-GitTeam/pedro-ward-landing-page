@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { MapPin, Sparkles, HeartPulse, Activity, Hand, Shield, Smile } from "lucide-react";
 
 import { SiteNav } from "@/components/site/SiteNav";
@@ -15,50 +14,7 @@ import elderlyImg from "@/assets/elderly-active.jpg";
 import careImg from "@/assets/pedro-ward.jpg";
 import ctaImg from "@/assets/cta-final.jpg";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Pedro Ward — Fisioterapia e Osteopatia em Bauru" },
-      {
-        name: "description",
-        content:
-          "Pedro Ward — Fisioterapeuta e Osteopata em Bauru. Tratamento focado na causa da dor, recuperação do movimento e funcionalidade. Agende sua avaliação.",
-      },
-      {
-        name: "keywords",
-        content: "fisioterapia Bauru, osteopatia Bauru, Pedro Ward, dor nas costas, reabilitação",
-      },
-      { property: "og:title", content: "Pedro Ward — Fisioterapia e Osteopatia em Bauru" },
-      {
-        property: "og:description",
-        content:
-          "Tratamento focado na causa da dor. Recupere movimento e funcionalidade com avaliação individualizada.",
-      },
-      { property: "og:type", content: "website" },
-      { property: "og:image", content: heroImg },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: heroImg },
-    ],
-    links: [
-      {
-        rel: "preconnect",
-        href: "https://fonts.googleapis.com",
-      },
-      {
-        rel: "preconnect",
-        href: "https://fonts.gstatic.com",
-        crossOrigin: "anonymous",
-      },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap",
-      },
-    ],
-  }),
-  component: Index,
-});
-
-function Index() {
+export default function App() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <Toaster />
