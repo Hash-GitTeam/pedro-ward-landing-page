@@ -2,14 +2,15 @@ import { useState } from "react";
 import { z } from "zod";
 import { CheckCircle2 } from "lucide-react";
 import { buildWhatsAppUrl } from "./WhatsAppContext";
+import { maskPhone } from "@/lib/mask";
 
 const schema = z.object({
   nome: z.string().trim().min(2, "Informe seu nome").max(100),
   telefone: z
     .string()
     .trim()
-    .min(8, "Informe um telefone válido")
-    .max(20, "Telefone muito longo"),
+    .min(14, "Informe um telefone válido")
+    .max(15, "Telefone muito longo"),
   motivo: z.string().trim().min(3, "Conte um pouco sobre sua queixa").max(500),
 });
 
@@ -63,13 +64,7 @@ export function AppointmentForm() {
       className="rounded-3xl border border-border bg-card p-8 md:p-10 shadow-card space-y-5"
     >
       <Field label="Nome" name="nome" placeholder="Seu nome completo" error={errors.nome} />
-      <Field
-        label="Telefone"
-        name="telefone"
-        type="tel"
-        placeholder="(14) 99999-9999"
-        error={errors.telefone}
-      />
+      <PhoneField error={errors.telefone} />
       <div className="space-y-2">
         <label className="text-sm font-medium text-foreground">Motivo da consulta</label>
         <textarea
@@ -117,6 +112,26 @@ function Field({
         name={name}
         placeholder={placeholder}
         maxLength={120}
+        className="w-full rounded-2xl border border-input bg-background px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
+      />
+      {error && <p className="text-xs text-destructive">{error}</p>}
+    </div>
+  );
+}
+
+function PhoneField({ error }: { error?: string }) {
+  const [value, setValue] = useState("");
+  return (
+    <div className="space-y-2">
+      <label className="text-sm font-medium text-foreground">Telefone</label>
+      <input
+        type="tel"
+        name="telefone"
+        inputMode="numeric"
+        value={value}
+        onChange={(e) => setValue(maskPhone(e.target.value))}
+        maxLength={15}
+        placeholder="(14) 99999-9999"
         className="w-full rounded-2xl border border-input bg-background px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
       />
       {error && <p className="text-xs text-destructive">{error}</p>}
