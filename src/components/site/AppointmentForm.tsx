@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { z } from "zod";
-import { toast } from "sonner";
 import { CheckCircle2 } from "lucide-react";
+import { buildWhatsAppUrl } from "./WhatsAppContext";
 
 const schema = z.object({
   nome: z.string().trim().min(2, "Informe seu nome").max(100),
@@ -35,9 +35,12 @@ export function AppointmentForm() {
       return;
     }
 
+    const { nome, motivo } = result.data;
+    const message = `Olá! Me chamo ${nome} e o motivo do meu contato é ${motivo}.`;
+    window.open(buildWhatsAppUrl(message), "_blank", "noopener,noreferrer");
+
     setErrors({});
     setSubmitted(true);
-    toast.success("Solicitação enviada! Em breve entraremos em contato.");
   }
 
   if (submitted) {
@@ -46,9 +49,9 @@ export function AppointmentForm() {
         <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary-soft">
           <CheckCircle2 className="h-7 w-7 text-primary" />
         </div>
-        <h3 className="font-display text-2xl">Recebemos sua solicitação</h3>
+        <h3 className="font-display text-2xl">Conversa iniciada</h3>
         <p className="mt-2 text-muted-foreground">
-          Em breve entramos em contato para confirmar sua avaliação.
+          Continue a conversa no WhatsApp para confirmarmos sua avaliação.
         </p>
       </div>
     );
