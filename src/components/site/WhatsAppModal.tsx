@@ -43,7 +43,7 @@ export function WhatsAppModal() {
     }
 
     const { nome } = result.data;
-    const message = `Olá! Me chamo ${nome}, e gostaria de mais informações. Pode me ajudar?`;
+    const message = `Olá! Me chamo ${nome} e gostaria de entender melhor como funciona. Poderia me passar mais informações?`;
     const url = buildWhatsAppUrl(message);
     window.open(url, "_blank", "noopener,noreferrer");
     setErrors({});

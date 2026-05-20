@@ -37,7 +37,7 @@ export function AppointmentForm() {
     }
 
     const { nome, motivo } = result.data;
-    const message = `Olá! Me chamo ${nome} e o motivo do meu contato é ${motivo}.`;
+    const message = `Olá! Me chamo ${nome} e o motivo da minha consulta é: ${motivo}`;
     window.open(buildWhatsAppUrl(message), "_blank", "noopener,noreferrer");
 
     setErrors({});
