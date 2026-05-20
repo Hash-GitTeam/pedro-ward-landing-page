@@ -4,6 +4,9 @@ import { SiteNav } from "@/components/site/SiteNav";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { CtaButton } from "@/components/site/CtaButton";
 import { AppointmentForm } from "@/components/site/AppointmentForm";
+import { WhatsAppProvider } from "@/components/site/WhatsAppContext";
+import { WhatsAppModal } from "@/components/site/WhatsAppModal";
+import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 import { Toaster } from "@/components/ui/sonner";
 
 import heroImg from "@/assets/hero-treatment.jpg";
