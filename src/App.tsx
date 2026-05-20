@@ -344,8 +344,11 @@ export default function App() {
         </div>
       </section>
 
-      <SiteFooter />
-    </main>
+        <SiteFooter />
+        <FloatingWhatsApp />
+        <WhatsAppModal />
+      </main>
+    </WhatsAppProvider>
   );
 }
 
