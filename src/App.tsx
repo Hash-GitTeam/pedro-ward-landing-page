@@ -112,7 +112,7 @@ export default function App() {
         <div className="mx-auto max-w-7xl px-6 py-24 md:py-32 grid lg:grid-cols-2 gap-14 items-center">
           <div className="space-y-6">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
-              Pedro Ward | Fisioterapeuta/Osteopatia
+              Pedro Ward
             </p>
             <h2 className="font-display text-4xl md:text-5xl leading-tight text-balance">
               Atendimento focado em <span className="text-primary">resultado real</span>
