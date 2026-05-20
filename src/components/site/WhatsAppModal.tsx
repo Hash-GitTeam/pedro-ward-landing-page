@@ -2,15 +2,17 @@ import { useEffect, useState } from "react";
 import { z } from "zod";
 import { X } from "lucide-react";
 import { buildWhatsAppUrl, useWhatsApp } from "./WhatsAppContext";
+import { maskPhone } from "@/lib/mask";
 
 const schema = z.object({
   nome: z.string().trim().min(2, "Informe seu nome").max(100),
-  telefone: z.string().trim().min(8, "Informe um telefone válido").max(20),
+  telefone: z.string().trim().min(14, "Informe um telefone válido").max(15),
 });
 
 export function WhatsAppModal() {
   const { isOpen, close } = useWhatsApp();
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [telefone, setTelefone] = useState("");
 
   useEffect(() => {
     if (!isOpen) return;
