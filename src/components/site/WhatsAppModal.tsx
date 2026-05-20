@@ -97,7 +97,10 @@ export function WhatsAppModal() {
             <input
               type="tel"
               name="telefone"
-              maxLength={20}
+              inputMode="numeric"
+              value={telefone}
+              onChange={(e) => setTelefone(maskPhone(e.target.value))}
+              maxLength={15}
               placeholder="(14) 99999-9999"
               className="w-full rounded-2xl border border-input bg-background px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
             />
