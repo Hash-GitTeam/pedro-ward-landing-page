@@ -118,7 +118,7 @@ export default function App() {
               Atendimento focado em <span className="text-primary">resultado real</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-lg">
-              Pedro Ward atua com foco em dor e funcionalidade, ajudando pacientes a:
+              Atuo com foco em dor e funcionalidade, ajudando pacientes a:
             </p>
 
             <ul className="space-y-3">
