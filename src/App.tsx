@@ -19,9 +19,10 @@ import ctaImg from "@/assets/cta-final.jpg";
 
 export default function App() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
-      <Toaster />
-      <SiteNav />
+    <WhatsAppProvider>
+      <main className="min-h-screen bg-background text-foreground">
+        <Toaster />
+        <SiteNav />
 
       {/* HERO */}
       <section className="relative overflow-hidden">
