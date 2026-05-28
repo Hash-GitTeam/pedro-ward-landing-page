@@ -51,9 +51,8 @@ export default function App() {
               </span>
             </div>
 
-            <div className="pt-6 flex items-center gap-3 text-sm text-muted-foreground">
-              <div className="h-px w-10 bg-border" />
-              <span>Pedro Ward · Fisioterapeuta | Osteopatia</span>
+            <div className="pt-6 text-sm text-muted-foreground">
+              <span>Pedro Ward · Osteopatia | Fisioterapia</span>
             </div>
           </div>
 
@@ -144,14 +143,17 @@ export default function App() {
             <CtaButton>Agendar avaliação</CtaButton>
           </div>
 
-          <img
-            src={careImg}
-            alt="Pedro Ward — Fisioterapeuta e Osteopata em Bauru"
-            width={1188}
-            height={1600}
-            loading="lazy"
-            className="w-full h-auto rounded-[2rem] object-cover shadow-card"
-          />
+          <div className="space-y-3">
+            <img
+              src={careImg}
+              alt="Pedro Ward — Fisioterapeuta e Osteopata em Bauru"
+              width={1188}
+              height={1600}
+              loading="lazy"
+              className="w-full h-auto rounded-[2rem] object-cover shadow-card"
+            />
+            <p className="text-right text-sm text-muted-foreground">CREFITO: 153070-F</p>
+          </div>
         </div>
       </section>
 
