@@ -50,7 +50,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-12 border-t border-border pt-6 text-xs text-muted-foreground flex flex-col md:flex-row gap-2 justify-between">
-          <p>© {new Date().getFullYear()} Pedro Ward — Fisioterapia & Osteopatia</p>
+          <p>@ {new Date().getFullYear()} Pedro Ward · Osteopatia | Fisioterapia</p>
           <p>Bauru — SP</p>
         </div>
       </div>
