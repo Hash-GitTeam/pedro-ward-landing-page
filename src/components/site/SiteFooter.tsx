@@ -10,7 +10,7 @@ export function SiteFooter() {
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-primary-foreground font-display">
                 P
               </span>
-              <span className="font-display text-lg">Pedro Ward</span>
+              <span className="font-display text-lg">Pedro Ward — CREFITO: 153070-F</span>
             </div>
             <p className="mt-4 text-sm text-muted-foreground max-w-xs">
               Fisioterapeuta e Osteopata. Atendimento focado em dor, movimento e funcionalidade.
