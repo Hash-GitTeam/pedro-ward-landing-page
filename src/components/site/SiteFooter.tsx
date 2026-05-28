@@ -20,7 +20,7 @@ export function SiteFooter() {
           <div className="space-y-3 text-sm">
             <h4 className="font-display text-base text-foreground">Contato</h4>
             <p className="flex items-start gap-2 text-muted-foreground">
-              <MapPin className="h-4 w-4 text-primary mt-0.5 shrink-0" /> Rua Xingu 3-36 — Bauru - SP
+              <MapPin className="h-4 w-4 text-primary mt-0.5 shrink-0" /> Bauru - SP
             </p>
             <p className="flex items-center gap-2 text-muted-foreground">
               <Phone className="h-4 w-4 text-primary" /> Atendimento mediante avaliação
