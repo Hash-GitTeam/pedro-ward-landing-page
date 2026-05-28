@@ -9,12 +9,12 @@ import { WhatsAppModal } from "@/components/site/WhatsAppModal";
 import { FloatingWhatsApp } from "@/components/site/FloatingWhatsApp";
 import { Toaster } from "@/components/ui/sonner";
 
-import heroImg from "@/assets/hero-treatment.jpg";
-import painImg from "@/assets/pain-problem.jpg";
-import osteoImg from "@/assets/osteopathy.jpg";
-import physioImg from "@/assets/physiotherapy.jpg";
+import heroImg from "@/assets/hero-treatment.webp";
+import painImg from "@/assets/pain-problem.webp";
+import osteoImg from "@/assets/osteopathy.webp";
+import physioImg from "@/assets/physiotherapy.webp";
 import elderlyImg from "@/assets/elderly-active.jpg";
-import careImg from "@/assets/pedro-ward.jpg";
+import careImg from "@/assets/pedro-ward.webp";
 import ctaImg from "@/assets/cta-final.jpg";
 
 export default function App() {
@@ -63,8 +63,8 @@ export default function App() {
               src={heroImg}
               alt="Sala de atendimento clean e iluminada"
               width={1600}
-              height={1100}
-              className="w-full h-auto rounded-[2rem] object-cover shadow-soft"
+              height={1600}
+              className="w-full h-auto rounded-[2rem] object-cover shadow-soft aspect-square"
             />
             <div className="absolute -bottom-6 -left-6 hidden md:flex items-center gap-3 rounded-2xl bg-card border border-border px-5 py-4 shadow-card">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-soft">
@@ -84,9 +84,9 @@ export default function App() {
         <div className="grid lg:grid-cols-2 gap-14 items-center">
           <img
             src={painImg}
-            alt="Pessoa com desconforto nas costas"
-            width={1200}
-            height={1200}
+            alt="Pedro Ward consultando livro de anatomia"
+            width={1600}
+            height={1600}
             loading="lazy"
             className="w-full h-auto rounded-[2rem] object-cover shadow-card order-2 lg:order-1"
           />
@@ -147,8 +147,8 @@ export default function App() {
           <img
             src={careImg}
             alt="Pedro Ward — Fisioterapeuta e Osteopata em Bauru"
-            width={900}
-            height={1200}
+            width={1188}
+            height={1600}
             loading="lazy"
             className="w-full h-auto rounded-[2rem] object-cover shadow-card"
           />
@@ -161,8 +161,8 @@ export default function App() {
           <img
             src={osteoImg}
             alt="Técnica manual de osteopatia"
-            width={1200}
-            height={1400}
+            width={1371}
+            height={1600}
             loading="lazy"
             className="w-full h-auto rounded-[2rem] object-cover shadow-card"
           />
@@ -225,8 +225,8 @@ export default function App() {
           <img
             src={physioImg}
             alt="Paciente em exercício de reabilitação"
-            width={1200}
-            height={1400}
+            width={1371}
+            height={1600}
             loading="lazy"
             className="w-full h-auto rounded-[2rem] object-cover shadow-card order-1 lg:order-2"
           />
